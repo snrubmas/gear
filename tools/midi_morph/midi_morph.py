@@ -15,15 +15,15 @@ Examples:
     python midi_morph.py midi/bach-invention-01-BWV772.mid
 
     # Route to M32, add pitch drift within pentatonic scale
-    python midi_morph.py midi/bach-invention-01-BWV772.mid \\
+    python midi_morph.py ~/Music/BeatFactory/midi/bach/bach-invention-01-BWV772.mid \\
         --port "Mother-32" --drift 7 --scale pentatonic
 
     # Random walk morph, heavy humanization, some note dropout
-    python midi_morph.py midi/bach-invention-01-BWV772.mid \\
+    python midi_morph.py ~/Music/BeatFactory/midi/bach/bach-invention-01-BWV772.mid \\
         --variable walk --humanize 0.4 --dropout 0.2
 
     # Force 90 BPM, send to Digitakt auto channel
-    python midi_morph.py midi/bach-invention-01-BWV772.mid \\
+    python midi_morph.py ~/Music/BeatFactory/midi/bach/bach-invention-01-BWV772.mid \\
         --bpm 90 --port "Digitakt"
 
     # List available MIDI ports

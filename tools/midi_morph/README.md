@@ -17,10 +17,10 @@ pip install mido python-rtmidi
 python midi_morph.py --list-ports
 
 # Play Bach Invention 1, default settings (slow breathing dynamics)
-python midi_morph.py midi/bach-invention-01-BWV772.mid
+python midi_morph.py ~/Music/BeatFactory/midi/bach/bach-invention-01-BWV772.mid
 
 # Route to Mother-32 specifically
-python midi_morph.py midi/bach-invention-01-BWV772.mid --port "Mother-32"
+python midi_morph.py ~/Music/BeatFactory/midi/bach/bach-invention-01-BWV772.mid --port "Mother-32"
 
 # Force 90 BPM
 python midi_morph.py midi/bach-invention-01-BWV772.mid --bpm 90
