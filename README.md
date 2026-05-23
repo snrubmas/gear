@@ -16,6 +16,8 @@
 | Make Noise Maths | 1 | Function generator / modulation source | Planned as a hands-on generative/modulation source. |
 | Noise Engineering Basimilus Iteritas Alia | 1 | Modular percussion / voice module | Used as modular percussion and rhythmic texture. Initially overlapped with Digitakt track 1 kick until Mutant Brain routing was changed. |
 | Erica Pico MScale | 1 | Pitch/CV utility | Mentioned as part of the modular setup. |
+| Beehive (Plaits clone) | 1 | Digital macro-oscillator | Multiple synthesis models; primary melodic/tonal voice candidate. |
+| Mutable Instruments Tides | 1 | Function generator / oscillator / LFO | Multi-mode: oscillator, envelope, LFO, with shape/slope/smoothness controls. |
 
 ## Modular Modules of Interest / Not Confirmed Owned
 
@@ -23,11 +25,9 @@ These came from the stabilized framework as current areas of curiosity or future
 
 | Item | Status | Notes |
 | --- | --- | --- |
-| Beehive / Plaits | Strong interest | Digital macro-oscillator voice area to explore. |
 | Music Thing Modular Turing Machine | Strong interest | Random looping CV/generative sequencing interest. |
 | Music Thing Modular Volts | Strong interest | Turing Machine expander interest. |
 | Music Thing Modular Pulses | Strong interest | Turing Machine trigger/gate expander interest. |
-| Mordax DATA | Strong interest | Visualization/oscilloscope module aligned with learning style. |
 | Make Noise QPAS | Learning target | Stereo filter, movement, resonance, spatial tone shaping, and pedal/modular soundscape workflows. |
 
 ## Known-Good Modular Patch
