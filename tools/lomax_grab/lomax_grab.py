@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-lomax_grab.py — download Alan Lomax field recordings from archive.org as MP3 samples.
+lomax_grab.py — download Alan Lomax field recordings from archive.org into BeatFactory.
 
 The Internet Archive hosts the complete Lomax collection as free, downloadable MP3s.
-This script downloads specific collections into your samples directory,
-organized by region and style — ready to drag into Digitakt or BeatFactory.
+Files land in ~/Music/BeatFactory/inbox/lomax-{collection}/ by default,
+ready to organize with: cd ~/Music/BeatFactory/scripts && python beatfactory.py organize
 
 Usage:
     python lomax_grab.py [collection] [--dest DIR] [--list]
@@ -142,7 +142,7 @@ def download_file(url, dest_path):
 def grab_collection(key, dest_root):
     col = COLLECTIONS[key]
     archive_id = col["id"]
-    dest_dir = os.path.join(dest_root, key)
+    dest_dir = os.path.join(dest_root, f"lomax-{key}")
 
     print(f"\n{'─' * 60}")
     print(f"Collection : {col['desc']}")
@@ -183,8 +183,8 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
     p.add_argument("collection", nargs="?", help="Collection name (or 'all')")
-    p.add_argument("--dest", default=os.path.expanduser("~/Documents/GitHub/gear/samples/lomax"),
-                   help="Destination directory (default: ~/Documents/GitHub/gear/samples/lomax)")
+    p.add_argument("--dest", default=os.path.expanduser("~/Music/BeatFactory/inbox"),
+                   help="Destination directory (default: ~/Music/BeatFactory/inbox)")
     p.add_argument("--list", action="store_true", help="List available collections")
     args = p.parse_args()
 
